@@ -1,53 +1,88 @@
 +++
 date = '2025-07-02T15:41:18+08:00'
-title = 'How to Update Rooted Google Pixel'
-categories = ['android root']
-tags = ['root', 'magisk', 'OTA update']
+title = 'How to Update a Rooted Google Pixel'
+categories = ['Android Root']
+tags = ['Root', 'Magisk', 'OTA Update']
 +++
 
-## Content
-
-### Heads up
-
-\* Updating your phone **will keep** so you don't need to worry about it.
-
-Some rooted apps, Magisk modules, and LSPosed modules might not support the new versions of Android you are trying to install so just make sure before installing the updates cause once you are update you cannot revert to an old version
+## How to Safely Update a Rooted Google Pixel
 
 
-### Disable Existing Modules
+Updating a rooted Pixel device doesn't have to be risky or complicated. This guide walks you through the process of updating your device while preserving root access and user data.
 
-Sometimes Magisk modules can effect can brake OTA updates or get broken by the upadates
-the safest thing we can do is just disable them (we will enable them after the update is completed)
+> [!NOTE]
+> ✅ **Your data will NOT be wiped** during this process. However, it's recommended to back up important data just in case.
 
-- Open your Magisk app
-- Navigate to the "Modules" tab
-    - Tick off _ALL_ of the installed modules.
-- Restart your phone.
+Some rooted apps, Magisk modules, or LSPosed modules may not support the new Android version. **Always verify compatibility** before proceeding - downgrading is often not possible after an update.
 
-### Update the firmware
+### Step 1: Disable Magisk Modules
 
-- Navigate to [factory images for Pixel](https://developers.google.com/android/images) 
-- Find your wanted version (usually the most bottom one in your model section - for the newest version)
-    - click on **link** this will download the `img` to your computer as we will need it for our next step [patching the images](#install-magisk-patch)
-- click on **flash** under your selected version, this will redirect you to the google flashing site (that work suprisnly well)
-- It will pop-up and prompt you to **Allow ADB access** - make sure you ~~Allow~~
-- Connect your devices make sure developer options is enable with USB Debugging
-    - If the sites doesnt recognize your phone and you dont see a prompt to acept the key there is a chance your device is connected to your local `adb` 
-        - Run `adb kill-server` and reconnect your phone to the computer.
-- Select the device in the UI
-- Check box your wanted options - **I leave everything unchecked - only check if you know what you are doing**
-- Click **Install Build** and follow the instructions
-- Should take a cuple of minutes depends on your internet speed. make sure to leave your devices connected until the install is done!!
+Magisk modules can interfere with OTA or factory image updates. To prevent bootloops or failed installs:
 
-Great now your phone is updated 😎 time to add the Magisk Patch to gain back the root access.
+1. Open the **Magisk** app.
+2. Go to the **Modules** tab.
+3. Disable (_untick_) **all installed modules**.
+4. Reboot your phone.
 
-### Install Magisk patch
+### Step 2: Install the Firmware
 
-- Download the firmware and extract the `init_boot.img` file:
-    - this usually will be inside the zip file called called something like `"image-[BUILD_NUMBER].zip"`
-- Connect your phone - make sure USB Debugging is enabled.
-```bash
-adb push init_boot.img /sdcard/
-```
-- this will push the img file to the home directory of your phone so it will be easy to find in the magisk app.
+1. Visit the [official Pixel factory images page](https://developers.google.com/android/images).
+2. Locate the version you want (usually the latest one at the bottom).
+    - Click **Link** to download the `.zip` image package for your device ([used for patching](#after)).
+    - Click **Flash** to launch Google’s official web flashing tool.
+3. When prompted, **allow ADB access** in your browser.
+4. Enable **Developer Options** and **USB Debugging** on your phone.
+5. If the device isn’t detected:
+   - Run `adb kill-server` and reconnect the phone.
+6. In the web UI:
+   - Select your device.
+   - Leave all advanced options **unchecked** (unless you're experienced).
+   - Click **Install Build** and follow the on-screen instructions.
+
+> ⚠️ **Do not disconnect the device** during installation. It may take several minutes depending on your internet speed.
+
+Once completed, your device will reboot into the new Android version.
+
+### Step 3: Patch the `init_boot.img` with Magisk
+
+1. Extract the downloaded `.zip` firmware and locate `init_boot.img` inside a file like `image-<build>.zip`.
+2. Push it to your phone:
+    ```bash
+    adb push init_boot.img /sdcard/
+    ```
+3. On your phone:
+    - Open the **Magisk** app.
+    - Tap **Install Magisk** on the home screen.
+    - Choose **Select and patch a file**.
+    - Select the `init_boot.img` file you just pushed.
+    - Tap **LET’S GO**.
+    - The app will output the location of the patched file, e.g., `/sdcard/Download/magisk_patched.img`.
+4. Pull the patched image back to your computer:
+    ```bash
+    adb pull /sdcard/Download/magisk_patched.img .
+    ```
+
+### Step 4: Flash the Patched Image
+
+1. Power off your phone and boot into **Fastboot mode**:
+    > [!INFO]
+    > Typically, press and hold **Power + Volume Up** simultaneously.
+2. Verify connection:
+    ```bash
+    fastboot devices
+    ```
+3. Flash the patched image:
+    ```bash
+    fastboot flash init_boot magisk_patched.img
+    ```
+4. Reboot your phone. You should now have root access restored.
+
+
+### Final Step: Re-enable Modules
+
+1. Open **Magisk** again.
+2. Re-enable your desired **Magisk** and **LSPosed** modules.
+3. Restart your phone once more.
+
+✅ Done! You now have an updated Pixel device with full root access restored.
 
