@@ -1,14 +1,5 @@
 baseURL = 'https://sho0pi.github.io/dev/'
 languageCode = 'en-us'
 title = 'Sho0pi Dev'
-theme = "cactus"
-googleAnalytics = "UA-1234-5"
+theme = "PaperMod"
 
-[params]
-  googleAnalyticsAsync = true # use asynchronous tracking. Synchronous tracking by default
-
-
-[privacy]
-  [privacy.googleAnalytics]
-    disable = true
-    respectDoNotTrack = false
