@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Android Root on Sho0pi Dev</title><link>https://sho0pi.github.io/dev/categories/android-root/</link><description>Recent content in Android Root on Sho0pi Dev</description><generator>Hugo -- 0.148.1</generator><language>en-us</language><lastBuildDate>Wed, 02 Jul 2025 15:41:18 +0800</lastBuildDate><atom:link href="https://sho0pi.github.io/dev/categories/android-root/index.xml" rel="self" type="application/rss+xml"/><item><title>How to Update a Rooted Google Pixel</title><link>https://sho0pi.github.io/dev/root/how-to-update-rooted-google-pixel/</link><pubDate>Wed, 02 Jul 2025 15:41:18 +0800</pubDate><guid>https://sho0pi.github.io/dev/root/how-to-update-rooted-google-pixel/</guid><description>&lt;h2 id="how-to-safely-update-a-rooted-google-pixel">How to Safely Update a Rooted Google Pixel&lt;/h2>
+&lt;p>Updating a rooted Pixel device doesn&amp;rsquo;t have to be risky or complicated. This
+guide walks you through the process of updating your device while preserving
+root access and user data.&lt;/p>
+&lt;blockquote>
+&lt;p>[!NOTE]
+✅ &lt;strong>Your data will NOT be wiped&lt;/strong> during this process. However, it&amp;rsquo;s
+recommended to back up important data just in case.&lt;/p>&lt;/blockquote>
+&lt;p>Some rooted apps, Magisk modules, or LSPosed modules may not support the new
+Android version. &lt;strong>Always verify compatibility&lt;/strong> before proceeding - downgrading
+is often not possible after an update.&lt;/p></description></item></channel></rss>
