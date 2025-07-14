@@ -27,10 +27,9 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          external_repository: sho0pi/sho0pi.github.io
-          publish_branch: master
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          destination_dir: dev
+          publish_branch: gh-pages
+          cname: dev.itay.world
           empty_commits: false
           commit_message: ${{ github.event.head_commit.message }}
