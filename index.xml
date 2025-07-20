@@ -1,11 +1,135 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Sho0pi Dev</title><link>https://sho0pi.github.io/dev/</link><description>Recent content on Sho0pi Dev</description><generator>Hugo -- 0.148.1</generator><language>en-us</language><lastBuildDate>Wed, 02 Jul 2025 15:41:18 +0800</lastBuildDate><atom:link href="https://sho0pi.github.io/dev/index.xml" rel="self" type="application/rss+xml"/><item><title>How to Update a Rooted Google Pixel</title><link>https://sho0pi.github.io/dev/root/how-to-update-rooted-google-pixel/</link><pubDate>Wed, 02 Jul 2025 15:41:18 +0800</pubDate><guid>https://sho0pi.github.io/dev/root/how-to-update-rooted-google-pixel/</guid><description>&lt;h2 id="how-to-safely-update-a-rooted-google-pixel">How to Safely Update a Rooted Google Pixel&lt;/h2>
-&lt;p>Updating a rooted Pixel device doesn&amp;rsquo;t have to be risky or complicated. This
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sho0pi Dev</title><link>https://dev.itay.world/</link><description>Sho0pi Dev</description><generator>Hugo 0.148.1 &amp; FixIt v0.3.20</generator><language>en-us</language><lastBuildDate>Sun, 20 Jul 2025 13:00:28 +0800</lastBuildDate><atom:link href="https://dev.itay.world/index.xml" rel="self" type="application/rss+xml"/><item><title>How to Update a Rooted Google Pixel</title><link>https://dev.itay.world/posts/how-to-update-rooted-google-pixel/</link><pubDate>Wed, 02 Jul 2025 15:41:18 +0800</pubDate><guid>https://dev.itay.world/posts/how-to-update-rooted-google-pixel/</guid><category domain="https://dev.itay.world/categories/android-root/">Android Root</category><description>&lt;h2 class="heading-element" id="how-to-safely-update-a-rooted-google-pixel">&lt;span>How to Safely Update a Rooted Google Pixel&lt;/span>
+ &lt;a href="#how-to-safely-update-a-rooted-google-pixel" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>Updating a rooted Pixel device doesn&amp;rsquo;t have to be risky or complicated. This
 guide walks you through the process of updating your device while preserving
 root access and user data.&lt;/p>
-&lt;blockquote>
-&lt;p>[!NOTE]
-✅ &lt;strong>Your data will NOT be wiped&lt;/strong> during this process. However, it&amp;rsquo;s
-recommended to back up important data just in case.&lt;/p>&lt;/blockquote>
-&lt;p>Some rooted apps, Magisk modules, or LSPosed modules may not support the new
+&lt;div class="alert alert-note">&lt;p class="alert-title">&lt;svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">&lt;path d="M0 8a8 8 0 1116 0A8 8 0 010 8zm8-6.5a6.5 6.5.0 100 13 6.5 6.5.0 000-13zM6.5 7.75A.75.75.0 017.25 7h1a.75.75.0 01.75.75v2.75h.25a.75.75.0 010 1.5h-2a.75.75.0 010-1.5h.25v-2h-.25a.75.75.0 01-.75-.75zM8 6a1 1 0 110-2 1 1 0 010 2z"/>&lt;/svg>Note&lt;/p>&lt;p>✅ &lt;strong>Your data will NOT be wiped&lt;/strong> during this process. However, it&amp;rsquo;s
+recommended to back up important data just in case.&lt;/p>&lt;/div>&lt;p>Some rooted apps, Magisk modules, or LSPosed modules may not support the new
 Android version. &lt;strong>Always verify compatibility&lt;/strong> before proceeding - downgrading
-is often not possible after an update.&lt;/p></description></item></channel></rss>
+is often not possible after an update.&lt;/p>
+&lt;h3 class="heading-element" id="step-1-disable-magisk-modules">&lt;span>Step 1: Disable Magisk Modules&lt;/span>
+ &lt;a href="#step-1-disable-magisk-modules" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>Magisk modules can interfere with OTA or factory image updates. To prevent
+bootloops or failed installs:&lt;/p>
+&lt;ol>
+&lt;li>Open the &lt;strong>Magisk&lt;/strong> app.&lt;/li>
+&lt;li>Go to the &lt;strong>Modules&lt;/strong> tab.&lt;/li>
+&lt;li>Disable (&lt;em>untick&lt;/em>) &lt;strong>all installed modules&lt;/strong>.&lt;/li>
+&lt;li>Reboot your phone.&lt;/li>
+&lt;/ol>
+&lt;h3 class="heading-element" id="step-2-install-the-firmware">&lt;span>Step 2: Install the Firmware&lt;/span>
+ &lt;a href="#step-2-install-the-firmware" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;ol>
+&lt;li>Visit the
+&lt;a href="https://developers.google.com/android/images"target="_blank" rel="external nofollow noopener noreferrer">official Pixel factory images page&lt;/a>.&lt;/li>
+&lt;li>Locate the version you want (usually the latest one at the bottom).
+&lt;ul>
+&lt;li>Click &lt;strong>Link&lt;/strong> to download the &lt;code>.zip&lt;/code> image package for your device
+(&lt;a href="#after">used for patching&lt;/a>).&lt;/li>
+&lt;li>Click &lt;strong>Flash&lt;/strong> to launch Google’s official web flashing tool.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>When prompted, &lt;strong>allow ADB access&lt;/strong> in your browser.&lt;/li>
+&lt;li>Enable &lt;strong>Developer Options&lt;/strong> and &lt;strong>USB Debugging&lt;/strong> on your phone.&lt;/li>
+&lt;li>If the device isn’t detected:
+&lt;ul>
+&lt;li>Run &lt;code>adb kill-server&lt;/code> and reconnect the phone.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>In the web UI:
+&lt;ul>
+&lt;li>Select your device.&lt;/li>
+&lt;li>Leave all advanced options &lt;strong>unchecked&lt;/strong> (unless you&amp;rsquo;re experienced).&lt;/li>
+&lt;li>Click &lt;strong>Install Build&lt;/strong> and follow the on-screen instructions.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;blockquote>
+&lt;p>⚠️ &lt;strong>Do not disconnect the device&lt;/strong> during installation. It may take several
+minutes depending on your internet speed.&lt;/p>&lt;/blockquote>
+&lt;p>Once completed, your device will reboot into the new Android version.&lt;/p>
+&lt;h3 class="heading-element" id="step-3-patch-the-init_bootimg-with-magisk">&lt;span>Step 3: Patch the &lt;code>init_boot.img&lt;/code> with Magisk&lt;/span>
+ &lt;a href="#step-3-patch-the-init_bootimg-with-magisk" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;ol>
+&lt;li>Extract the downloaded &lt;code>.zip&lt;/code> firmware and locate &lt;code>init_boot.img&lt;/code> inside a
+file like &lt;code>image-&amp;lt;build&amp;gt;.zip&lt;/code>.&lt;/li>
+&lt;li>Push it to your phone:
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">adb push init_boot.img /sdcard/&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;li>On your phone:
+&lt;ul>
+&lt;li>Open the &lt;strong>Magisk&lt;/strong> app.&lt;/li>
+&lt;li>Tap &lt;strong>Install Magisk&lt;/strong> on the home screen.&lt;/li>
+&lt;li>Choose &lt;strong>Select and patch a file&lt;/strong>.&lt;/li>
+&lt;li>Select the &lt;code>init_boot.img&lt;/code> file you just pushed.&lt;/li>
+&lt;li>Tap &lt;strong>LET’S GO&lt;/strong>.&lt;/li>
+&lt;li>The app will output the location of the patched file, e.g.,
+&lt;code>/sdcard/Download/magisk_patched.img&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Pull the patched image back to your computer:
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">adb pull /sdcard/Download/magisk_patched.img .&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;/ol>
+&lt;h3 class="heading-element" id="step-4-flash-the-patched-image">&lt;span>Step 4: Flash the Patched Image&lt;/span>
+ &lt;a href="#step-4-flash-the-patched-image" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;ol>
+&lt;li>Power off your phone and boot into &lt;strong>Fastboot mode&lt;/strong>:
+&lt;div class="details admonition info open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true">&lt;/i>Info&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;p>Typically, press and hold &lt;strong>Power + Volume Up&lt;/strong> simultaneously.&lt;/p>&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;/li>
+&lt;li>Verify connection:
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">fastboot devices&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;li>Flash the patched image:
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">fastboot flash init_boot magisk_patched.img&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;li>Reboot your phone. You should now have root access restored.&lt;/li>
+&lt;/ol>
+&lt;h3 class="heading-element" id="final-step-re-enable-modules">&lt;span>Final Step: Re-enable Modules&lt;/span>
+ &lt;a href="#final-step-re-enable-modules" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;ol>
+&lt;li>Open &lt;strong>Magisk&lt;/strong> again.&lt;/li>
+&lt;li>Re-enable your desired &lt;strong>Magisk&lt;/strong> and &lt;strong>LSPosed&lt;/strong> modules.&lt;/li>
+&lt;li>Restart your phone once more.&lt;/li>
+&lt;/ol>
+&lt;p>✅ Done! You now have an updated Pixel device with full root access restored.&lt;/p></description></item></channel></rss>
