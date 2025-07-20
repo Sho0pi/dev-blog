@@ -1,0 +1,102 @@
+defaultTheme: light
+author:
+  name: Sho0pi
+  link: https://github.com/Sho0pi
+  avatar: https://github.com/sho0pi.png
+
+app:
+  iconColor: "#0094ff"
+  tileColor: "#0094ff"
+  themeColor:
+    light: "#f8f8f8"
+    dark: "#252627"
+# Fuse should be the fastest search engine
+search:
+  enable: true
+  # TODO: help configure the search in the outputs
+  type: fuse
+
+###### HEADER + FOOTER ######
+header:
+  desktopMode: normal
+  mobileMode: auto
+  title:
+    logo: https://github.com/sho0pi.png
+    name: Sho0pi Dev
+  subtitle:
+    name: notes & knots
+footer:
+  enable: true
+  copyright: true
+  author: true
+  since: 2025
+  license: <a rel="license external nofollow noopener noreffer"
+    href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC
+    BY-NC 4.0</a>
+  powered:
+    enable: false
+#############################
+
+# Enable cause why not?
+breadcrumb:
+  enable: true
+
+# IDONT KNOW WHAT IS THAT
+tagcloud:
+  enable: true
+
+###### PROFILE CONFIG ######
+home:
+  profile:
+    enable: true
+    avatarURL: https://github.com/sho0pi.png
+    subtitle: "IF 1 = 1 THEN dance"
+    avatarMenu: about
+    typeit: true
+social:
+  GitHub: Sho0pi
+  Instagram: itay.png
+  Linkedin: sho0pi
+  travel:
+    id: "https://itay.world"
+    weight: 1
+    Template: "%v"
+    Title: "Itay's World"
+    icon:
+      Src: "https://itay.world/favicon.svg"
+      # Class: fa-brands fa-weixin fa-fw
+#############################
+
+# Progress and keys:
+backToTop:
+  enable: true
+  scrollpercent: true
+readingProgress:
+  enable: true
+
+# Image optimization:
+image:
+  cacheRemote: true
+  optimise: true
+
+# Site counter
+busuanzi:
+  enable: true
+  siteViews: false
+  pageViews: true
+
+# analytics
+analytics:
+  enable: true
+  umami:
+    data_website_id: 57684c48-362e-41b9-9fc3-6828f15399d9
+    src: https://cloud.umami.is/script.js
+    data_host_url: ""
+    data_domains: ""
+cookieconsent:
+  enable: true
+
+### CUSTOM PARTIALLLLSS
+customPartials:
+  profile:
+    - custom/profile.html

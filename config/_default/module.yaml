@@ -1,0 +1,3 @@
+# Import the FixIt theme
+imports:
+  - path: github.com/hugo-fixit/FixIt

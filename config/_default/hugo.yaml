@@ -1,0 +1,7 @@
+title: Sho0pi Dev
+baseURL: https://dev.itay.world/
+languageCode: en-us
+
+enableRobotsTXT: true
+enableEmoji: true
+enableGitInfo: true

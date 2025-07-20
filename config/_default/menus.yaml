@@ -1,0 +1,26 @@
+main:
+  - identifier: travel
+    name: Travel Blog
+    url: https://itay.world/
+    params:
+      icon: fas fa-passport
+  - identifier: about
+    pre: ""
+    post: ""
+    name: About
+    url: /about/
+    title: ""
+    weight: 100
+    params:
+      icon: fa-solid fa-quote-left
+  - identifier: github
+    pre: ""
+    post: ""
+    name: Follow
+    url: https://github.com/Sho0pi/
+    title: ""
+    weight: ""
+    params:
+      class: text-center
+      icon: fa-brands fa-github fa-lg
+      type: mobile
